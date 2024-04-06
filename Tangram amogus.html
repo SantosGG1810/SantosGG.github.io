@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Triángulo Rectángulo</title>
+</head>
+<body>
+    <canvas id="canvas" width="700" height="700"></canvas>
+    <script>
+        window.onload = function () {
+            var canvas = document.getElementById('canvas'),
+                context = canvas.getContext('2d');
+
+            // Tamaño del triángulo
+            var triangleSize = 150;
+
+            // Coordenadas del vértice superior del primer triángulo (centrado horizontalmente)
+            var triangleX1 = (canvas.width - triangleSize) / 10 - 30;
+            var triangleY1 = 260;
+
+            context.beginPath();
+            context.moveTo(triangleX1, triangleY1);
+            context.lineTo(triangleX1 + triangleSize, triangleY1);
+            context.lineTo(triangleX1, triangleY1 + triangleSize);
+            context.closePath();
+
+            context.fillStyle = "#03C04A";
+            context.fill();
+
+            //////////////////////////////////////////////////////////////////////
+
+            var triangleSize2 = 150;
+
+            var triangleX2 = (canvas.width - triangleSize2) / 10 - 30;
+            var triangleY2 = 410;
+
+            context.save();
+            context.translate(triangleX2 + triangleSize2, triangleY2);
+            context.rotate(Math.PI / -2);
+            context.beginPath();
+            context.moveTo(0, 0);
+            context.lineTo(triangleSize2, 0);
+            context.lineTo(0, -triangleSize2);
+            context.closePath();
+
+            context.fillStyle = "#03C04A";
+            context.fill();
+
+            context.restore();
+
+            //////////////////////////////////////////////////////////////////////
+
+            var triangleSize3 = 150;
+
+            var triangleX3 = (canvas.width - triangleSize3) / 1.495 - 87;
+            var triangleY3 = 260;
+
+            context.save();
+            context.translate(triangleX3, triangleY3);
+            context.rotate(Math.PI / 4);
+            context.beginPath();
+            context.moveTo(0, 0);
+            context.lineTo(-triangleSize3, 0);
+            context.lineTo(0, triangleSize3);
+            context.closePath();
+
+            context.fillStyle = "#0894FF";
+            context.fill();
+
+            context.restore();
+
+            //////////////////////////////////////////////////////////////////////
+
+            var triangleSize4 = 150;
+
+            var triangleX4 = (canvas.width - triangleSize4) / 1.495 - 87;
+            var triangleY4 = 470;
+
+            context.save();
+            context.translate(triangleX4, triangleY4);
+            context.rotate(Math.PI / 4);
+            context.beginPath();
+            context.moveTo(0, 0);
+            context.lineTo(-triangleSize4, 0);
+            context.lineTo(0, triangleSize4);
+            context.closePath();
+
+            context.fillStyle = "#0894FF";
+            context.fill();
+
+            context.restore();
+
+            //////////////////////////////////////////////////////////////////////
+
+            var triangleSize5 = 150;
+
+            var triangleX5 = (canvas.width - triangleSize5) / 10 - 30;
+            var triangleY5 = 365;
+
+            context.save();
+            context.translate(triangleX5 + triangleSize5, triangleY5);
+            context.rotate(Math.PI / 4);
+            context.beginPath();
+            context.moveTo(0, 0);
+            context.lineTo(triangleSize5, 0);
+            context.lineTo(0, -triangleSize5);
+            context.closePath();
+
+            context.fillStyle = "#0894FF";
+            context.fill();
+
+            context.restore();
+
+            //////////////////////////////////////////////////////////////////////
+
+            var triangleSize4 = 150;
+
+            var triangleX4 = (canvas.width - triangleSize4) / 1.109 - 110;
+            var triangleY4 = 365;
+
+            context.save();
+            context.translate(triangleX4, triangleY4);
+            context.rotate(Math.PI / 4);
+            context.beginPath();
+            context.moveTo(0, 0);
+            context.lineTo(-triangleSize4, 0);
+            context.lineTo(0, triangleSize4);
+            context.closePath();
+
+            context.fillStyle = "#0894FF";
+            context.fill();
+
+            context.restore();
+
+            //////////////////////////////////////////////////////////////////////
+
+            var triangleSize4 = 150;
+
+            var triangleX4 = (canvas.width - triangleSize4) / 1.109 - 110;
+            var triangleY4 = 365;
+
+            context.save();
+            context.translate(triangleX4, triangleY4);
+            context.rotate(Math.PI / -4);
+            context.beginPath();
+            context.moveTo(0, 0);
+            context.lineTo(-triangleSize4, 0);
+            context.lineTo(0, triangleSize4);
+            context.closePath();
+
+            context.fillStyle = "#78288c";
+            context.fill();
+
+            context.restore();
+
+            //////////////////////////////////////////////////////////////////////
+
+            var triangleSize5 = 150;
+
+            var triangleX5 = (canvas.width - triangleSize5) / 2.312 - 63;
+            var triangleY5 = 153;
+
+            context.save();
+            context.translate(triangleX5 + triangleSize5, triangleY5);
+            context.rotate(Math.PI / 1);
+            context.beginPath();
+            context.moveTo(0, 0);
+            context.lineTo(triangleSize5, 0);
+            context.lineTo(0, -triangleSize5);
+            context.closePath();
+
+            context.fillStyle = "#FF0890";
+            context.fill();
+
+            context.restore();
+
+            //////////////////////////////////////////////////////////////////////
+
+            var triangleSize2 = 150;
+
+            var triangleX2 = (canvas.width - triangleSize2) / 2.31 - 63;
+            var triangleY2 = 153;
+
+            context.save();
+            context.translate(triangleX2 + triangleSize2, triangleY2);
+            context.rotate(Math.PI / -2);
+            context.beginPath();
+            context.moveTo(0, 0);
+            context.lineTo(triangleSize2, 0);
+            context.lineTo(0, -triangleSize2);
+            context.closePath();
+
+            context.fillStyle = "#FC50C8";
+            context.fill();
+
+            context.restore();
+
+            //////////////////////////////////////////////////////////////////////
+
+            var triangleSize2 = 150;
+
+            var triangleX2 = (canvas.width - triangleSize2) / 1.247 - 99;
+            var triangleY2 = 320;
+
+            context.save();
+            context.translate(triangleX2 + triangleSize2, triangleY2);
+            context.rotate(Math.PI / 1);
+            context.beginPath();
+            context.moveTo(0, 0);
+            context.lineTo(triangleSize2, 0);
+            context.lineTo(0, -triangleSize2);
+            context.closePath();
+
+            context.fillStyle = "#E9274B";
+            context.fill();
+
+            context.restore();
+
+            //////////////////////////////////////////////////////////////////////
+
+            var triangleSize = 150;
+
+            var triangleX1 = (canvas.width - triangleSize) / 0.88 - 133;
+            var triangleY1 = 320;
+
+            context.beginPath();
+            context.moveTo(triangleX1, triangleY1);
+            context.lineTo(triangleX1 + triangleSize, triangleY1);
+            context.lineTo(triangleX1, triangleY1 + triangleSize);
+            context.closePath();
+
+            context.fillStyle = "#E9274B";
+            context.fill();
+
+            //////////////////////////////////////////////////////////////////////
+
+            var triangleSize2 = 150;
+
+            var triangleX2 = (canvas.width - triangleSize2) / 1.119;
+            var triangleY2 = 470;
+
+            context.save();
+            context.translate(triangleX2 + triangleSize2, triangleY2);
+            context.rotate(Math.PI / -2);
+            context.beginPath();
+            context.moveTo(0, 0);
+            context.lineTo(triangleSize2, 0);
+            context.lineTo(0, -triangleSize2);
+            context.closePath();
+
+            context.fillStyle = "#E9274B";
+            context.fill();
+
+            context.restore();
+
+            //////////////////////////////////////////////////////////////////////
+
+            var triangleSize2 = 150;
+
+            var triangleX2 = (canvas.width - triangleSize2) / 1.119;
+            var triangleY2 = 470;
+
+            context.save();
+            context.translate(triangleX2 + triangleSize2, triangleY2);
+            context.rotate(Math.PI / 1);
+            context.beginPath();
+            context.moveTo(0, 0);
+            context.lineTo(triangleSize2, 0);
+            context.lineTo(0, -triangleSize2);
+            context.closePath();
+
+            context.fillStyle = "#E9274B";
+            context.fill();
+
+            context.restore();
+
+            //////////////////////////////////////////////////////////////////////
+
+            var triangleSize4 = 150;
+
+            var triangleX4 = (canvas.width - triangleSize4) / 1.109 - 170;
+            var triangleY4 = 153;
+
+            context.save();
+            context.translate(triangleX4, triangleY4);
+            context.rotate(Math.PI / -1);
+            context.beginPath();
+            context.moveTo(0, 0);
+            context.lineTo(-triangleSize4, 0);
+            context.lineTo(0, triangleSize4);
+            context.closePath();
+
+            context.fillStyle = "#f9d517";
+            context.fill();
+
+            context.restore();
+
+            //////////////////////////////////////////////////////////////////////
+
+            var triangleSize5 = 150;
+
+            var triangleX5 = (canvas.width - triangleSize5) / 2.312 - 63;
+            var triangleY5 = 153;
+
+            context.save();
+            context.translate(triangleX5 + triangleSize5, triangleY5);
+            context.rotate(Math.PI / 1);
+            context.beginPath();
+            context.moveTo(0, 0);
+            context.lineTo(triangleSize5, 0);
+            context.lineTo(0, -triangleSize5);
+            context.closePath();
+
+            context.fillStyle = "#FC50C8";
+            context.fill();
+
+            context.restore();
+
+             //////////////////////////////////////////////////////////////////////
+
+            var triangleSize5 = 150;
+
+            var triangleX5 = (canvas.width - triangleSize5) / 1.689;
+            var triangleY5 = 1.8;
+
+            context.save();
+            context.translate(triangleX5 + triangleSize5, triangleY5);
+            context.rotate(Math.PI / 1);
+            context.beginPath();
+            context.moveTo(0, 0);
+            context.lineTo(triangleSize5, 0);
+            context.lineTo(0, -triangleSize5);
+            context.closePath();
+
+            context.fillStyle = "#FC5B08";
+            context.fill();
+
+            context.restore();
+
+             //////////////////////////////////////////////////////////////////////
+
+            var triangleSize4 = 150;
+
+            var triangleX4 = (canvas.width - triangleSize4) / 1.156;
+            var triangleY4 = 151.9;
+
+            context.save();
+            context.translate(triangleX4, triangleY4);
+            context.rotate(Math.PI / -1);
+            context.beginPath();
+            context.moveTo(0, 0);
+            context.lineTo(-triangleSize4, 0);
+            context.lineTo(0, triangleSize4);
+            context.closePath();
+
+            context.fillStyle = "#FC5B08";
+            context.fill();
+
+            context.restore();
+
+            
+
+            
+        };
+    </script>
+</body>
+</html>
+
+
+
+
+
